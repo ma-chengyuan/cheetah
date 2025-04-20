@@ -20,8 +20,8 @@ typedef struct {
     // Three cases of p = prefix_lens[i] (i is zero-based):
     // 1. p = 0: we don't have the local value for i yet.
     // 2. p < lowbit(i + 1): up[i] stores the sum of last p elements up to i.
-    //    should be a power of 2.
-    // 3. p = lowbit(i + 1): up[i] and down[i] both store the sum of all
+    //    p should be a power of 2.
+    // 3. p = lowbit(i + 1): up[i] and down[i] both store the sum of last p
     //    elements up to i.
     // 4. p = i + 1: down[i] stores the prefix sum of all elements up to i.
     //    up[i] stores the sum of last lowbit(i + 1) elements up to i.
