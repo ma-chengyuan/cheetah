@@ -16,6 +16,7 @@ set(CHEETAH_SOURCES
   personality.c
   sched_stats.c
   scheduler.c
+  scanner.c
 )
 
 set(CHEETAH_ABI_SOURCE
